@@ -1,13 +1,17 @@
 <p>
     <strong>Olá João Vitor Nunes Lobato de Souza</strong>
+    <br>
     ag: 9999, CO: 9999-9
 </p>
 
 <p>
-  Poupança: R$10
-  <input type="text" #sacar>
-  <button>Sacar</button>
+  Poupança: {{getSacar}}
+  <input type="text" #sacarr>
+  <button (click)="sacar(sacarr.value)">Sacar</button>
 </p>
 <p>
-  Carteira: R$10
+  Carteira: {{getCarteira}}
+  <br>
+  <input type="text" #depositar>
+  <button (click)="setDepositar(depositar.value)">Depositar</button>
 </p>
